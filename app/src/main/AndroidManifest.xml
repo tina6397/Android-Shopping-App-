@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tina.iLOVEZappos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.tina.iLOVEZappos.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop"
+            android:name="com.example.tina.iLOVEZappos.activity.MainActivity2_search"
+            android:parentActivityName="com.example.tina.iLOVEZappos.activity.MainActivity" />
+        <activity android:launchMode="singleTop"
+            android:name="com.example.tina.iLOVEZappos.activity.MainActivity3_detail"
+            android:label="@string/title_activity_main3"
+            android:parentActivityName="com.example.tina.iLOVEZappos.activity.MainActivity2_search" />
+        <activity android:launchMode="singleTop"
+            android:name="com.example.tina.iLOVEZappos.activity.MainActivity4_cart"
+            android:parentActivityName="com.example.tina.iLOVEZappos.activity.MainActivity" />
+        <activity android:launchMode="singleTop" android:name="com.example.tina.iLOVEZappos.activity.MainActivity5_about_me"
+            android:parentActivityName="com.example.tina.iLOVEZappos.activity.MainActivity" ></activity>
+    </application>
+
+</manifest>

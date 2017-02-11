@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.tina.iLOVEZappos.activity.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/search_field"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:queryHint="What are you looking for?"
+        android:fadingEdge="horizontal"
+        android:background="@color/colorGreyLight">
+
+    </SearchView>
+
+
+    <GridLayout
+        android:layout_width="341dp"
+        android:layout_height="wrap_content">
+
+    </GridLayout>
+
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+        android:id="@+id/tapBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+
+        app:tbm_backgroundColor="@color/colorPrimaryDark"
+        app:tbm_menuAnchor="bottom"
+        app:tbm_buttonPosition="right"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/item1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_profile"
+            tools:visibility="visible"
+            android:onClick="aboutMe"
+
+            />
+
+        <ImageView
+            android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:onClick="cart"
+            android:src="@drawable/ic_cart"
+            />
+
+
+        <ImageView
+            android:id="@+id/item3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_search"
+            android:onClick="search"
+            />
+
+        <Space
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            />
+
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+    <Button
+        android:text="Feeling lucky?"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Search2"
+        android:onClick="searchLucky"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/search_field"
+        android:layout_toStartOf="@+id/Search"
+        android:layout_marginEnd="17dp" />
+
+    <ImageButton
+        app:srcCompat="@drawable/shopnow1"
+        android:id="@+id/imageButton"
+        android:layout_height="253dp"
+        android:layout_width="413dp"
+        android:adjustViewBounds="true"
+        android:onClick="searchAD"
+        android:layout_weight="0.84"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/Search"
+        android:layout_alignParentStart="true" />
+
+    <Button
+    android:text="Search"
+    android:layout_width="163dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/Search"
+    android:onClick="search"
+        android:layout_alignBaseline="@+id/Search2"
+        android:layout_alignBottom="@+id/Search2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp" />
+
+
+</RelativeLayout>

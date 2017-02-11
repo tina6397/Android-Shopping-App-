@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.tina.iLOVEZappos.activity.MainActivity"
+    android:weightSum="1">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_weight="0.41"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="40dp"/>
+
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+        android:id="@+id/tapBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+
+        app:tbm_backgroundColor="@color/colorPrimaryDark"
+        app:tbm_menuAnchor="bottom"
+        app:tbm_buttonPosition="right"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/item1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_profile"
+            tools:visibility="visible"
+            android:onClick="aboutMe"
+
+            />
+
+        <ImageView
+            android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:onClick="cart"
+            android:src="@drawable/ic_cart"
+            />
+
+
+        <ImageView
+            android:id="@+id/item3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_search"
+            android:onClick="search"
+            />
+
+        <Space
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            />
+
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+</FrameLayout>
