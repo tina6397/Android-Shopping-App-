@@ -11,5 +11,6 @@ Retrofit + GSON converter plugin https://square.github.io/retrofit/<br>
 Picasso https://github.com/michaldrabik/TapBarMenu<br>
 Tab Bar Menu https://github.com/michaldrabik/TapBarMenu
 
+[Alt text](https://github.com/tina6397/iLoveZappos/blob/master/screenshot/front.png "Launch page")
 
-![Alt text](https://github.com/tina6397/iLoveZappos/blob/master/screenshot/front.png "Optional title")
+
