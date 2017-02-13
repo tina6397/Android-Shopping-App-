@@ -17,5 +17,8 @@ Tab Bar Menu https://github.com/michaldrabik/TapBarMenu
 # Search Page
 ![](https://github.com/tina6397/iLoveZappos/blob/master/screenshot/search.png "Launch page")
 ![](https://github.com/tina6397/iLoveZappos/blob/master/screenshot/product.png "Launch page")
+
+
+# Shopping Cart
 ![](https://github.com/tina6397/iLoveZappos/blob/master/screenshot/cart.png "Launch page")
 
